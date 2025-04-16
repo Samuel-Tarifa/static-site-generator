@@ -1,10 +1,9 @@
 import os, shutil
 
-dst = "./public"
 source = "./static"
 
 
-def copy_to_public():
+def copy_statics(dst):
     if os.path.exists(dst):
         shutil.rmtree(dst)
     os.mkdir(dst)
